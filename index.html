@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masego Mokgoko — Reflective Portfolio of Evidence | NWU Novice Teacher Award 2026</title>
+<meta name="description" content="Reflective portfolio of evidence submitted by Ms Masego Mokgoko, Faculty of Law, North-West University, for the NWU Novice Teacher Award 2026.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#582C83">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B1524; --ink-soft:#4A3F58;
+  --purple:#582C83; --purple-deep:#35194F; --purple-night:#241033;
+  --paper:#FCFBFD; --paper-alt:#F2EDF7;
+  --thread:#A87C33; --thread-light:#D8BE86;
+  --rule:#DCD3E5;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow:hidden}
+h1,h2,h3,h4{font-family:Newsreader,Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+p{margin:0 0 1em}
+a{color:var(--purple)}
+img{max-width:100%;height:auto;display:block}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2.5px solid var(--thread);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ================= deck ================= */
+.deck{position:fixed;inset:0}
+.slide{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;opacity:0;visibility:hidden;transform:translateY(18px);transition:opacity .45s ease,transform .45s ease,visibility .45s;-webkit-overflow-scrolling:touch}
+.slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+.slide{--sbg:var(--paper)}
+.slide.dark{background:var(--purple-deep);color:#F4EFF8;--sbg:var(--purple-deep)}
+.slide.night{background:var(--purple-night);color:#EDE4F4;--sbg:var(--purple-night)}
+.slide.alt{background:var(--paper-alt);--sbg:var(--paper-alt)}
+@media (prefers-reduced-motion:reduce){.slide{transition:none}}
+
+.inner{max-width:1120px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;justify-content:center;padding:4.2rem 1.4rem 6.5rem}
+@media (min-width:760px){.inner{padding:4.5rem 3rem 6.5rem}}
+@media (min-width:1100px){.inner{padding:4.5rem 3rem 6.5rem;max-width:1180px}}
+@media (min-width:1100px){.slide{padding-left:262px}}
+
+.kicker{font-size:.78rem;color:var(--ink-soft);margin:0 0 .5rem}
+.dark .kicker,.night .kicker{color:var(--thread-light)}
+h2{font-size:clamp(1.8rem,3.6vw,2.5rem);letter-spacing:-.012em;margin-bottom:.9rem}
+.dark h2,.night h2{color:#fff}
+h3{font-size:1.14rem;margin:1.6rem 0 .55rem}
+.lede{font-size:1.06rem;color:var(--ink-soft);max-width:56ch;line-height:1.58}
+.dark .lede,.night .lede{color:#C9B6D8}
+.body{max-width:62ch}
+
+
+/* scroll cue for slides taller than the viewport */
+.cue{position:sticky;bottom:0;height:84px;margin-top:-84px;pointer-events:none;opacity:0;transition:opacity .3s;display:grid;place-items:end center;padding-bottom:.7rem;background:linear-gradient(transparent,var(--sbg) 72%)}
+.cue.show{opacity:1}
+.cue span{font-size:.72rem;color:var(--ink-soft);letter-spacing:.02em}
+.dark .cue span,.night .cue span{color:#B5A0C6}
+
+/* short viewports: tighten so less scrolling is needed */
+@media (max-height:780px){
+  .inner{padding-top:3.2rem;padding-bottom:5.5rem}
+  h2{font-size:clamp(1.6rem,3vw,2.05rem)}
+  .lede{font-size:.98rem}
+  .gallery img{height:120px}
+  .gallery.big img{height:170px}
+  blockquote.golden{font-size:1.12rem;padding:.9rem 0 .9rem 1.3rem}
+  .entry{padding:.85rem 0}
+  .entry p{font-size:.85rem}
+}
+
+
+/* ================= NWU logo ================= */
+.logo{display:block;width:64px;height:auto;margin-bottom:1rem}
+.slide .logo{width:74px;margin-bottom:1.4rem}
+#menu .logo{width:58px;margin:0 auto 1.6rem}
+@media (max-height:780px){.slide .logo{width:60px;margin-bottom:1rem}}
+
+/* ================= autoplay ================= */
+#timer{position:fixed;top:2px;left:0;height:2px;background:var(--thread-light);opacity:.55;z-index:59;width:0}
+#play[aria-pressed="true"]{color:var(--purple)}
+
+
+/* ================= STLES results ================= */
+.stles-grid{display:grid;gap:1.6rem;margin-top:1.2rem}
+@media (min-width:980px){.stles-grid{grid-template-columns:1.1fr .9fr;gap:2.6rem;align-items:start}}
+.modmeta{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.79rem;color:var(--ink-soft);margin:0 0 1rem}
+.modmeta b{color:var(--ink);font-weight:600}
+.swatch{display:inline-block;width:10px;height:10px;margin-right:.4rem;vertical-align:-1px}
+.sw-a{background:var(--purple)} .sw-b{background:var(--thread)}
+
+.chart{margin-top:.4rem}
+.chart .grp{margin-bottom:.85rem}
+.chart .lab{font-size:.78rem;color:var(--ink-soft);margin-bottom:.28rem;display:block}
+.chart .track{position:relative;height:15px;background:#EDE7F3;margin-bottom:3px}
+.chart .bar{position:absolute;inset:0 auto 0 0;width:0;transition:width 1.1s cubic-bezier(.2,.7,.3,1)}
+.chart .bar.a{background:var(--purple)}
+.chart .bar.b{background:var(--thread)}
+.chart .val{position:absolute;top:50%;transform:translateY(-50%);left:calc(100% + 6px);font-size:.71rem;color:var(--ink-soft);font-variant-numeric:tabular-nums;white-space:nowrap}
+.chart .axis{display:flex;justify-content:space-between;font-size:.68rem;color:var(--ink-soft);border-top:1px solid var(--rule);padding-top:.25rem;margin-top:.5rem}
+/* narrow screens: no room to the right of the bar, so sit the figure inside it */
+@media (max-width:560px){
+  .chart .track{height:17px}
+  .chart .val{left:auto;right:6px;color:#fff;font-weight:500}
+  .chart .bar.b .val{color:#2A1E0A}
+}
+@media (prefers-reduced-motion:reduce){.chart .bar{transition:none}}
+
+.quotes{margin:0;padding:0;list-style:none}
+.quotes li{border-left:2px solid var(--thread);padding:.15rem 0 .15rem .9rem;margin-bottom:.85rem;font-size:.88rem;line-height:1.5;color:var(--ink)}
+.quotes cite{display:block;font-style:normal;font-size:.72rem;color:var(--ink-soft);margin-top:.3rem}
+
+/* ================= rail ================= */
+.rail{display:none}
+@media (min-width:1100px){
+  .rail{display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;width:262px;padding:2.3rem 1.4rem 5.5rem 2.2rem;border-right:1px solid var(--rule);background:var(--paper);z-index:20;overflow-y:auto}
+}
+.rail .mark{font-family:Newsreader,serif;font-size:1.02rem;line-height:1.3}
+.rail .mark b{font-weight:500;display:block}
+.rail .sub{font-size:.74rem;color:var(--ink-soft);margin:.2rem 0 1.8rem}
+.rail ol{list-style:none;margin:0;padding:0}
+.rail button{width:100%;text-align:left;background:none;border:0;color:var(--ink-soft);font-size:.85rem;padding:.36rem 0 .36rem 1.6rem;position:relative;border-left:1px solid var(--rule);margin-left:.28rem;line-height:1.35;transition:color .18s}
+.rail button:hover,.rail button[aria-current="true"]{color:var(--purple)}
+.rail button::before{content:"";position:absolute;left:-3.5px;top:.78rem;width:6px;height:6px;background:var(--paper);border:1px solid var(--rule);transform:rotate(45deg);transition:.2s}
+.rail button[aria-current="true"]::before{background:var(--thread);border-color:var(--thread)}
+.rail .n{color:var(--thread);font-size:.72rem;margin-right:.4rem;font-variant-numeric:tabular-nums}
+.rail .group{font-size:.68rem;color:var(--ink-soft);opacity:.7;margin:1.3rem 0 .3rem 1.9rem;letter-spacing:.06em}
+.rail .foot{margin-top:auto;padding-top:1.6rem;font-size:.72rem;color:var(--ink-soft);line-height:1.5}
+
+/* ================= controls ================= */
+#progress{position:fixed;top:0;left:0;height:2px;background:var(--thread);z-index:60;transition:width .4s ease;width:0}
+.controls{position:fixed;right:1.1rem;bottom:1.1rem;z-index:50;display:flex;align-items:center;gap:.5rem;background:rgba(252,251,253,.92);backdrop-filter:blur(8px);border:1px solid var(--rule);padding:.35rem .4rem}
+.slide.dark ~ .controls{}
+.controls button{background:none;border:0;width:38px;height:38px;display:grid;place-items:center;color:var(--ink);font-size:1.15rem;line-height:1;transition:.18s}
+.controls button:hover:not(:disabled){background:var(--paper-alt);color:var(--purple)}
+.controls button:disabled{opacity:.28;cursor:default}
+.counter{font-size:.78rem;color:var(--ink-soft);font-variant-numeric:tabular-nums;min-width:3.4rem;text-align:center}
+.menu-btn{display:grid}
+@media (min-width:1100px){.menu-btn{display:none}}
+
+/* mobile slide menu */
+#menu{position:fixed;inset:0;z-index:70;background:var(--purple-night);display:none;padding:4.2rem 1.4rem 2.5rem;overflow-y:auto}
+#menu nav{max-width:520px;margin:0 auto}
+#menu .group{font-size:.7rem;color:var(--thread-light);opacity:.85;letter-spacing:.06em;margin:1.5rem 0 .3rem;padding-left:.2rem}
+#menu.open{display:block}
+#menu ol{list-style:none;margin:0;padding:0}
+#menu button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(216,190,134,.18);color:#EDE4F4;font-size:.98rem;padding:.85rem .2rem}
+#menu button[aria-current="true"]{color:var(--thread-light)}
+#menu .n{color:var(--thread);font-size:.78rem;margin-right:.6rem;font-variant-numeric:tabular-nums}
+#menu .close{position:absolute;top:1rem;right:1rem;border:1px solid rgba(216,190,134,.4);width:42px;height:42px;font-size:1.3rem;display:grid;place-items:center}
+
+.hint{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%);z-index:45;font-size:.75rem;color:var(--ink-soft);background:rgba(252,251,253,.9);padding:.3rem .8rem;border:1px solid var(--rule);transition:opacity .5s}
+.hint.gone{opacity:0;pointer-events:none}
+@media (max-width:1099px){.hint{display:none}}
+
+/* ================= title slide ================= */
+.title-grid{display:grid;gap:2rem;align-items:center}
+@media (min-width:820px){.title-grid{grid-template-columns:1.3fr .7fr;gap:3.2rem}}
+.eyebrow{font-size:.78rem;color:var(--thread-light);margin:0 0 1.3rem;display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--thread)}
+h1{font-size:clamp(2.6rem,7vw,4.4rem);letter-spacing:-.018em;color:#fff}
+h1 .given{display:block;font-style:italic;font-weight:300;font-size:.5em;color:#CDB8E0;margin-bottom:.1rem}
+.role{font-size:1rem;color:#D6C6E4;margin:1.2rem 0 0;max-width:36ch;line-height:1.55}
+.role span{color:#fff}
+.portrait{position:relative;max-width:300px}
+.portrait img{width:100%;filter:grayscale(.18) contrast(1.03)}
+.portrait::after{content:"";position:absolute;inset:auto 0 -12px -12px;width:56px;height:1px;background:var(--thread)}
+.factbar{display:grid;border-top:1px solid rgba(216,190,134,.32);margin-top:2.6rem}
+@media (min-width:640px){.factbar{grid-template-columns:repeat(3,1fr)}}
+.factbar div{padding:1rem 0 .2rem;border-bottom:1px solid rgba(216,190,134,.18)}
+@media (min-width:640px){.factbar div{border-bottom:none;padding:1rem 1.3rem 0 0}.factbar div+div{border-left:1px solid rgba(216,190,134,.18);padding-left:1.5rem}}
+.factbar dt{font-size:.72rem;color:var(--thread-light);margin-bottom:.25rem}
+.factbar dd{margin:0;font-size:.9rem;color:#EDE4F4;line-height:1.45}
+
+/* ================= criterion slides ================= */
+.crit{display:block;max-width:840px}
+.crit-head{position:relative;padding-left:2rem}
+.crit-head::before{content:"";position:absolute;left:0;top:.3rem;bottom:-.4rem;width:1px;background:linear-gradient(var(--thread),var(--thread-light))}
+.crit-head::after{content:"";position:absolute;left:-4px;top:.42rem;width:9px;height:9px;background:var(--thread);transform:rotate(45deg)}
+.crit-no{font-family:Newsreader,serif;font-size:.92rem;color:var(--thread);font-variant-numeric:tabular-nums;margin:0 0 .3rem}
+
+blockquote.golden{margin:1.6rem 0 0;padding:1.1rem 0 1.1rem 1.5rem;border-left:2px solid var(--thread);font-family:Newsreader,serif;font-size:clamp(1.15rem,2.3vw,1.45rem);font-weight:300;line-height:1.42;color:var(--purple-deep);max-width:34ch}
+blockquote.golden cite{display:block;font-family:"IBM Plex Sans",sans-serif;font-size:.76rem;font-style:normal;color:var(--ink-soft);margin-top:.8rem}
+
+
+
+.videoslot{aspect-ratio:16/9;background:var(--paper-alt);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;text-align:center;padding:1.3rem;margin-top:1.3rem}
+.videoslot p{margin:0;font-size:.88rem;color:var(--ink-soft);max-width:32ch}
+.videoslot iframe,.videoslot video{width:100%;height:100%;border:0}
+
+/* ================= globe ================= */
+.reach-grid{display:grid;gap:1.6rem;margin-top:1.4rem;align-items:center}
+@media (min-width:900px){.reach-grid{grid-template-columns:1fr 1fr;gap:2.8rem}}
+#globe{width:100%;aspect-ratio:1/1;max-height:46vh;position:relative;cursor:grab;touch-action:pan-y}
+@media (min-width:900px){#globe{max-height:56vh}}
+#globe.dragging{cursor:grabbing}
+#globe canvas{display:block;width:100%;height:100%}
+.globe-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:1.5rem;font-size:.88rem;color:#C9B6D8}
+.stops{list-style:none;margin:0;padding:0}
+.stops li{border-top:1px solid rgba(216,190,134,.2)}
+.stops li:last-child{border-bottom:1px solid rgba(216,190,134,.2)}
+.stops button{width:100%;background:none;border:0;color:#EDE4F4;text-align:left;padding:.85rem .4rem .85rem 1.4rem;position:relative;transition:background .2s}
+.stops button:hover,.stops button[aria-current="true"]{background:rgba(216,190,134,.07)}
+.stops button::before{content:"";position:absolute;left:0;top:1.2rem;width:7px;height:7px;transform:rotate(45deg);background:transparent;border:1px solid var(--thread);transition:.2s}
+.stops button[aria-current="true"]::before{background:var(--thread)}
+.stops .place{display:block;font-size:.95rem;color:#fff}
+.stops .what{display:block;font-size:.79rem;color:#B5A0C6;margin-top:.15rem;line-height:1.42}
+
+/* ================= gallery ================= */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:1.3rem}
+figure{margin:0}
+.gallery button{display:block;width:100%;padding:0;border:0;background:none;text-align:left}
+.gallery img{width:100%;height:150px;object-fit:cover;background:var(--paper-alt);transition:filter .25s}
+.gallery.big img{height:210px}
+.gallery button:hover img{filter:brightness(1.07) saturate(1.05)}
+figcaption{font-size:.73rem;color:var(--ink-soft);margin-top:.4rem;line-height:1.4}
+
+/* ================= lightbox ================= */
+#lightbox{position:fixed;inset:0;z-index:80;background:rgba(26,17,36,.95);display:none;align-items:center;justify-content:center;padding:2.5rem 1.2rem 4.5rem}
+#lightbox.open{display:flex}
+#lightbox img{max-width:min(1100px,92vw);max-height:76vh;object-fit:contain}
+#lightbox .cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#D6C6E4;font-size:.83rem;padding:0 3.5rem;line-height:1.5}
+#lightbox .x,#lightbox .nav{position:absolute;background:none;border:1px solid rgba(216,190,134,.4);color:#EDE4F4;width:44px;height:44px;font-size:1.2rem;display:grid;place-items:center}
+#lightbox .x{top:1.1rem;right:1.1rem}
+#lightbox .nav{top:50%;transform:translateY(-50%)}
+#lightbox .prev{left:1rem}
+#lightbox .next{right:1rem}
+#lightbox .x:hover,#lightbox .nav:hover{border-color:var(--thread);color:var(--thread-light)}
+
+/* ================= lists, entries, scorer ================= */
+.evlist{list-style:none;margin:1.2rem 0 0;padding:0}
+@media (min-width:820px){.evlist{columns:2;column-gap:2.4rem}}
+.evlist li{border-top:1px solid var(--rule);break-inside:avoid}
+.evlist button{width:100%;background:none;border:0;display:flex;gap:.9rem;align-items:baseline;justify-content:space-between;text-align:left;padding:.75rem .2rem;color:var(--ink);transition:background .18s}
+.evlist button:hover{background:var(--paper-alt)}
+.evlist button:hover .t{text-decoration:underline;text-underline-offset:3px}
+.evlist .t{font-size:.93rem;line-height:1.35}
+.evlist .k{font-size:.73rem;color:var(--ink-soft);white-space:nowrap;flex-shrink:0}
+
+.entries{display:grid;gap:0}
+@media (min-width:900px){.entries{grid-template-columns:1fr 1fr;column-gap:2.8rem}}
+.entry{padding:1.1rem 0;border-top:1px solid var(--rule)}
+.entry h4{font-size:1.05rem;margin-bottom:.3rem;line-height:1.3}
+.entry .meta{font-size:.78rem;color:var(--ink-soft);margin:0 0 .5rem}
+.entry p{font-size:.9rem;margin-bottom:.5rem}
+.entry p:last-child{margin-bottom:0}
+.entry .tags{font-size:.76rem;color:var(--ink-soft)}
+
+.scorer{border:1px solid var(--rule);background:#fff;margin-top:1.2rem}
+.scorer .row{display:grid;gap:.45rem;padding:.6rem .95rem;border-bottom:1px solid var(--rule)}
+@media (min-width:620px){.scorer .row{grid-template-columns:1fr auto;align-items:center;gap:1.1rem}}
+.scorer .row .name{font-size:.9rem}
+.scorer .levels{display:flex;gap:.3rem}
+.scorer .levels button{flex:1;background:#F8F5FB;border:1px solid var(--rule);padding:.36rem .5rem;font-size:.74rem;color:var(--ink-soft);white-space:nowrap;transition:.18s}
+.scorer .levels button:hover{border-color:var(--thread-light)}
+.scorer .levels button[aria-pressed="true"]{background:var(--purple);border-color:var(--purple);color:#fff}
+.scorer .total{display:flex;flex-wrap:wrap;gap:.5rem 1.8rem;align-items:baseline;padding:.9rem .95rem;background:var(--paper-alt)}
+.scorer .total .big{font-family:Newsreader,serif;font-size:1.9rem;line-height:1;color:var(--purple-deep);font-variant-numeric:tabular-nums}
+.scorer .total .pct{font-size:.95rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.scorer .verdict{flex-basis:100%;font-size:.84rem;color:var(--ink-soft);margin:0}
+.scorer .reset{background:none;border:0;color:var(--purple);font-size:.78rem;text-decoration:underline}
+.scorer .acts{display:flex;gap:1rem;align-items:center;margin-left:auto}
+@media (max-width:560px){
+  .scorer .acts{margin-left:0;flex-basis:100%;order:3;justify-content:space-between}
+  .scorer .verdict{order:4}
+}
+.dl{display:inline-flex;align-items:center;gap:.45rem;background:var(--purple);border:1px solid var(--purple);color:#fff;font-size:.8rem;padding:.45rem .85rem;transition:.18s}
+.dl:hover{background:var(--purple-deep);border-color:var(--purple-deep)}
+.dl svg{flex-shrink:0}
+
+.contact{display:grid;gap:1.2rem;margin-top:1.6rem;max-width:60ch}
+@media (min-width:620px){.contact{grid-template-columns:1fr 1fr}}
+.contact dt{font-size:.73rem;color:var(--ink-soft);margin-bottom:.2rem}
+.contact dd{margin:0;font-size:.92rem}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="timer"></div>
+
+<aside class="rail" id="rail">
+  <img class="logo" src="nwu-logo-purple.png" alt="North-West University" width="440" height="399">
+  <div class="mark"><b>Masego Mokgoko</b></div>
+  <div class="sub">Reflective portfolio of evidence<br>NWU Novice Teacher Award 2026</div>
+  <nav id="railnav" aria-label="Slides"></nav>
+  <div class="foot">Faculty of Law<br>Potchefstroom &amp; Mahikeng<br>North-West University</div>
+</aside>
+
+<div class="deck" id="deck">
+
+  <!-- 1 -->
+  <section class="slide dark" id="title" data-dur="9" data-nav="Title">
+    <div class="inner">
+      <img class="logo" src="nwu-logo-white.png" alt="North-West University" width="440" height="399">
+      <p class="eyebrow">NWU Novice Teacher Award 2026 &nbsp;·&nbsp; Reflective portfolio of evidence</p>
+      <div class="title-grid">
+        <div>
+          <h1><span class="given">Masego</span>Mokgoko</h1>
+          <p class="role">Lecturer, <span>Faculty of Law</span>, North-West University — <span>IURI271 Criminal Procedure</span> from the Potchefstroom Campus, and <span>PPLM824 Public International Law</span> at master's level from the Mahikeng Campus.</p>
+        </div>
+        <div class="portrait"><img src="portrait-formal.jpg" alt="Portrait of Masego Mokgoko" width="900" height="1243"></div>
+      </div>
+      <dl class="factbar">
+        <div><dt>Modules taught</dt><dd>IURI271 Criminal Procedure · PPLM824 Public International Law</dd></div>
+        <div><dt>Campuses</dt><dd>Potchefstroom and Mahikeng</dd></div>
+        <div><dt>Portfolio criteria</dt><dd>Five criteria, evaluated out of 30</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="slide" id="about" data-dur="16" data-nav="The academic">
+    <div class="inner">
+      <p class="kicker">The academic</p>
+      <h2>Teaching law as a way of thinking, not a body of rules</h2>
+      <div class="body">
+        <p class="lede">This portfolio sets out how I teach, how I assess, how I build a classroom that works for every student in it, and what my students have taught me in return.</p>
+        <p>My teaching sits across two levels and two campuses. In IURI271 Criminal Procedure, at Potchefstroom, I work with undergraduates on the rules governing how the state investigates, arrests, charges and tries a person — the point at which constitutional rights either hold or fail in practice. In PPLM824 Public International Law, at Mahikeng, I work with a master's cohort on questions that are live in the world right now: the reach of the International Court of Justice, the limits of the Security Council, the regulation of technologies that arrived faster than the statutes governing them.</p>
+        <p>What connects the two is a conviction that runs through every slide that follows: law students learn most when the law in front of them is unfinished. My job is to put them in the room where the argument is still open, and to give them the tools to take a position in it.</p>
+      </div>
+      <div class="gallery big" data-gallery>
+        <figure><button type="button" data-src="class-group.jpg" data-cap="With students at the Faculty of Law, Potchefstroom Campus."><img src="class-group.jpg" alt="Masego Mokgoko with students in front of NWU branding"></button><figcaption>With students at the Faculty of Law, Potchefstroom Campus.</figcaption></figure>
+        <figure><button type="button" data-src="icj-seminar-group.jpg" data-cap="The PPLM824 cohort after the ICJ and UN Security Council seminar, 13 September 2025."><img src="icj-seminar-group.jpg" alt="Students and guests at the ICJ and UNSC seminar"></button><figcaption>The PPLM824 cohort after the ICJ and UNSC seminar, 13 September 2025.</figcaption></figure>
+        <figure><button type="button" data-src="law-group-a.jpg" data-cap="Faculty of Law — Law · Regte · Molao."><img src="law-group-a.jpg" alt="Group beneath the Faculty of Law banner"></button><figcaption>Faculty of Law — Law · Regte · Molao.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="slide night" id="reach" data-dur="20" data-nav="Where the work travels">
+    <div class="inner">
+      <p class="kicker">Where the work travels</p>
+      <h2>Public international law, taught from Mahikeng</h2>
+      <p class="lede">A master's course in international law is only credible if the lecturer is arguing in the same forums the students are reading about. These are the places the teaching and the scholarship have met.</p>
+      <div class="reach-grid">
+        <div>
+          <div id="globe" role="img" aria-label="Interactive globe marking Potchefstroom, The Hague, London and Skukuza"></div>
+        </div>
+        <ul class="stops" id="stops">
+          <li><button type="button" data-i="0" aria-current="true"><span class="place">Mahikeng, South Africa</span><span class="what">NWU Mahikeng Campus. Where PPLM824 Public International Law is taught, at master's level.</span></button></li>
+          <li><button type="button" data-i="1"><span class="place">Potchefstroom, South Africa</span><span class="what">NWU Potchefstroom Campus. Where IURI271 Criminal Procedure is taught, and the base of the Faculty of Law school.</span></button></li>
+          <li><button type="button" data-i="2"><span class="place">The Hague, Netherlands</span><span class="what">Seat of the International Court of Justice. Subject of the 13 September 2025 seminar on the ICJ, the Security Council and South Africa v Israel.</span></button></li>
+          <li><button type="button" data-i="3"><span class="place">London, United Kingdom</span><span class="what">2nd International Conference on Environment and Sustainable Development, 26–28 September 2025. Paper on Starlink, satellites and South African EMF law.</span></button></li>
+          <li><button type="button" data-i="4"><span class="place">Skukuza, Kruger National Park</span><span class="what">6th University of Pretoria International Consumer Law Conference, 1–3 October 2025, with five NWU Faculty of Law colleagues.</span></button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="slide" id="statement" data-dur="20" data-nav="Teaching statement" data-crit="1">
+    <div class="inner">
+      <div class="crit">
+        <div>
+          <div class="crit-head">
+            <p class="crit-no">Criterion 1</p>
+            <h2>Teaching statement</h2>
+            <p class="lede">How my teaching statement shapes my teaching approach — the learning theory beneath it, how I see the student, and how I understand my own role in making learning happen.</p>
+          </div>
+          <blockquote class="golden">Replace this with the single sentence that best captures your teaching philosophy. It becomes the thread quoted here and referenced in every criterion that follows.<cite>The thread running through this portfolio</cite></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="slide" id="assessment" data-dur="20" data-nav="Assessment plan" data-crit="2">
+    <div class="inner">
+      <div class="crit">
+        <div>
+          <div class="crit-head">
+            <p class="crit-no">Criterion 2</p>
+            <h2>Assessment plan</h2>
+            <p class="lede">A five-minute presentation of the assessment plan for one of my modules, built on a teaching and learning framework, showing how planning, teaching, assessment and feedback hold together.</p>
+          </div>
+          <div class="videoslot"><p>Assessment plan video goes here. Paste the embed code from Panopto, YouTube (unlisted) or eFundi in place of this block.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="slide" id="inclusive" data-dur="20" data-nav="Inclusive teaching" data-crit="3">
+    <div class="inner">
+      <div class="crit">
+        <div>
+          <div class="crit-head">
+            <p class="crit-no">Criterion 3</p>
+            <h2>Inclusive teaching practices</h2>
+            <p class="lede">How I build a learning environment that reduces barriers rather than working around them, guided by a framework and evidenced in what students actually do.</p>
+          </div>
+          <div class="gallery" data-gallery>
+            <figure><button type="button" data-src="seminar-room.jpg" data-cap="Seminar-format teaching: students working in a shared space rather than a lecture row."><img src="seminar-room.jpg" alt="Students working around a seminar table"></button><figcaption>Seminar format rather than lecture rows.</figcaption></figure>
+            <figure><button type="button" data-src="teaching-session.jpg" data-cap="A working session with students on campus."><img src="teaching-session.jpg" alt="A teaching session in progress"></button><figcaption>A working session on campus.</figcaption></figure>
+            <figure><button type="button" data-src="law-group-b.jpg" data-cap="Class group, Faculty of Law."><img src="law-group-b.jpg" alt="A large class group"></button><figcaption>Class group, Faculty of Law.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="slide" id="voice" data-dur="20" data-nav="Student voice" data-crit="4">
+    <div class="inner">
+      <div class="crit">
+        <div>
+          <div class="crit-head">
+            <p class="crit-no">Criterion 4</p>
+            <h2>Student voice: practical application</h2>
+            <p class="lede">How I evaluate my own teaching, what students told me, and what I changed because of it.</p>
+          </div>
+          <p style="font-size:.9rem;color:var(--ink-soft);margin-top:1.1rem">Both modules were surveyed in the second semester of 2025 &mdash; <b>91.52%</b> overall lecturer performance in IURI271 across 17 responses, <b>86.78%</b> in PPLM824 across 8. The next slide sets out the results and what students asked for; the full reports are in the evidence index.</p>
+          <div class="gallery" data-gallery>
+            <figure><button type="button" data-src="student-seminar-brics.jpg" data-cap="Student seminar: From Dependency to Industrial Sovereignty — the strategic role of BRICS in reshaping SADC's place in the global economy."><img src="student-seminar-brics.jpg" alt="Students in front of a BRICS and SADC presentation"></button><figcaption>Student seminar on BRICS and SADC.</figcaption></figure>
+            <figure><button type="button" data-src="presentation-a.jpg" data-cap="Presentation session with the master's cohort."><img src="presentation-a.jpg" alt="A presentation session"></button><figcaption>Presentation with the master's cohort.</figcaption></figure>
+            <figure><button type="button" data-src="recognition.jpg" data-cap="Recognition at a Faculty of Law event."><img src="recognition.jpg" alt="Recognition at a Faculty event"></button><figcaption>Recognition at a Faculty event.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- student voice evidence -->
+  <section class="slide alt" id="stles" data-nav="STLES results" data-dur="22">
+    <div class="inner">
+      <p class="kicker">Criterion 4 &nbsp;·&nbsp; the evidence</p>
+      <h2>What the students said</h2>
+      <p class="lede">Student Teaching and Learning Experience Survey, second semester 2025, across both modules I teach.</p>
+      <p class="modmeta">
+        <span><span class="swatch sw-a"></span><b>IURI271</b> Criminal Procedure — undergraduate, 17 responses</span>
+        <span><span class="swatch sw-b"></span><b>PPLM824</b> Public International Law — postgraduate, 8 responses</span>
+      </p>
+      <div class="stles-grid">
+        <div>
+          <div class="chart" id="chart" data-vals='[
+            ["Educational approach (B1\u2013B3, B5\u2013B10)", 91.34, 87.15],
+            ["Assessment practices (C1\u2013C5)", 92.06, 85.00],
+            ["Module evaluation (D1\u2013D3, D6\u2013D7)", 91.47, 87.50],
+            ["Teaching and learning practices, overall", 91.62, 86.55],
+            ["Overall lecturer performance", 91.52, 86.78]
+          ]'></div>
+          <p style="font-size:.74rem;color:var(--ink-soft);margin-top:.9rem">Percentages on a nought-to-hundred scale, taken directly from the NWU survey reports. Both full reports are in the evidence index.</p>
+        </div>
+        <div>
+          <h3 style="margin-top:0">In the students' words</h3>
+          <ul class="quotes">
+            <li>The video assignments were fun and challenged my creativity. Ms Mokgoko also engaged a lot with us in the class which made the lectures engaging and not boring.<cite>IURI271 · what did you like most about this module</cite></li>
+            <li>Our lecturer made it possible for us to fully understand the module, she went as far as inviting guest speakers who are relevant people DIRCO who understand the international agreements process.<cite>PPLM824 · what did you like most about this module</cite></li>
+            <li>I do think that the symposium must continue. They are extremely educational and important.<cite>PPLM824 · suggestions for student collaboration</cite></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="slide" id="reflection" data-dur="20" data-nav="Overall reflection" data-crit="5">
+    <div class="inner">
+      <div class="crit">
+        <div>
+          <div class="crit-head">
+            <p class="crit-no">Criterion 5</p>
+            <h2>Overall reflection</h2>
+            <p class="lede">My academic journey so far, what mentorship has done for my practice, and how I intend to bring my students into the community my work touches.</p>
+          </div>
+          <div class="gallery" data-gallery>
+            <figure><button type="button" data-src="graduation.jpg" data-cap="Graduation — a marker on the academic journey this criterion asks about."><img src="graduation.jpg" alt="In graduation regalia"></button><figcaption>A marker on the academic journey.</figcaption></figure>
+            <figure><button type="button" data-src="cert-pg-supervision.jpg" data-cap="Certificate of Participation — Postgraduate Supervision Workshop, University Capacity Development Programme, NWU Potchefstroom Campus, 5–7 May 2026."><img src="cert-pg-supervision.jpg" alt="Certificate of participation, postgraduate supervision workshop"></button><figcaption>Postgraduate Supervision Workshop, UCDP, 5–7 May 2026.</figcaption></figure>
+            <figure><button type="button" data-src="cert-up-mentorship.jpg" data-cap="Certificate of Appreciation, Final-Year Mentorship Programme, University of Pretoria Career Services, 18 November 2025."><img src="cert-up-mentorship.jpg" alt="Certificate of appreciation for mentorship"></button><figcaption>Mentor, UP Final-Year Mentorship Programme, 2025.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="slide alt" id="scholarship" data-dur="22" data-nav="Teaching &amp; scholarship">
+    <div class="inner">
+      <p class="kicker">Supporting evidence</p>
+      <h2>Teaching and scholarship</h2>
+      <p class="lede">Emerging scholarship the rubric asks for under Criteria 4 and 5, the teaching events behind the reflections, and two papers accepted for 2026.</p>
+      <div class="entries">
+        <div class="entry">
+          <h4>Starlink, satellites and South African EMF law</h4>
+          <p class="meta">Lesego Masisi and Masego Mokgoko · 2nd International Conference on Environment and Sustainable Development, London, 26–28 September 2025 · Abstract Book Vol. 2 No. 1 (2025)</p>
+          <p>A critical evaluation of South Africa's legislative framework for communications technology, focused on the regulatory standards governing exposure to electromagnetic fields.</p>
+          <p class="tags">EMF · Starlink technology · Non-ionising radiation · Neuroethics</p>
+        </div>
+        <div class="entry">
+          <h4>Master's symposium on international agreements</h4>
+          <p class="meta">Facilitated for the PPLM824 LLM cohort · with DIRCO and the DHET</p>
+          <p>Ms Seipelo Kgosiejang of the DHET spoke on the development and conclusion of international agreements; Mr Khathutshelo Mathelemusa of the DHET worked through a concluded bilateral agreement as a case study; and Mr Emmanuel Meyiwa of the South African Treaty Section at DIRCO presented on the life of an international agreement.</p>
+          <p>The aim was to give master's students direct access to people who negotiate these instruments for a living.</p>
+        </div>
+        <div class="entry">
+          <h4>Seminar: the ICJ, the UNSC and international justice</h4>
+          <p class="meta">PPLM824 International Law master's class · 13 September 2025</p>
+          <p>Examining the tensions between the International Court of Justice and the UN Security Council, framed through the South Africa v Israel case. Presented by Mr Lesego Masisi, legal scholar and activist, member of the National Council and National Executive Committee of the Anti-Apartheid Movement for Palestine (South African chapter).</p>
+        </div>
+        <div class="entry">
+          <h4>Architecture of dispossession</h4>
+          <p class="meta">Masego Mokgoko and Lesego Masisi · accepted for the United Kingdom 2026 conference programme, 10:40–10:55</p>
+          <p>Structuralism, legal positivism, the Natives Land Act 1913, and the political economy of democratic transformation in South Africa.</p>
+        </div>
+        <div class="entry">
+          <h4>Advancing gender equality in Zimbabwean democracy</h4>
+          <p class="meta">Priccilar Vengesai (University of South Africa) and Masego Mokgoko · accepted for the United Kingdom 2026 conference programme, 11:50–12:05</p>
+          <p>Electoral design or a political party mandate? Lessons from South Africa.</p>
+        </div>
+        <div class="entry">
+          <h4>6th UP International Consumer Law Conference</h4>
+          <p class="meta">1–3 October 2025 · Skukuza Safari Lodge, Kruger National Park</p>
+          <p>Represented the NWU Faculty of Law alongside Prof Howard Chitimira, Mr Phakisho Mello, Prof Precious Sihlangu, Dr Mahlatse Maake-Malatji and Dr Jeanette Visagie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="slide" id="evidence" data-dur="16" data-nav="Evidence index">
+    <div class="inner">
+      <p class="kicker">Evidence index</p>
+      <h2>Supporting artefacts</h2>
+      <p class="lede">Every item referenced in this deck, in one place. Select any item to open it full size.</p>
+      <ul class="evlist" data-gallery>
+        <li><button type="button" data-src="doc-abstract-starlink.jpg" data-cap="Published abstract — Starlink, satellites and South African EMF law."><span class="t">Published abstract — Starlink and EMF law</span><span class="k">Publication</span></button></li>
+        <li><button type="button" data-src="doc-conference-acceptance.jpg" data-cap="Notification of paper acceptance, ICESD London."><span class="t">Paper acceptance — ICESD, London</span><span class="k">Correspondence</span></button></li>
+        <li><button type="button" data-src="doc-post-esd-london.jpg" data-cap="Faculty announcement — conference paper, London."><span class="t">Faculty announcement — London paper</span><span class="k">Faculty record</span></button></li>
+        <li><button type="button" data-src="doc-post-symposium.jpg" data-cap="Faculty announcement — PPLM824 symposium with DIRCO and DHET."><span class="t">Faculty announcement — PPLM824 symposium</span><span class="k">Faculty record</span></button></li>
+        <li><button type="button" data-src="doc-post-icj-unsc.jpg" data-cap="Faculty announcement — ICJ and UNSC seminar."><span class="t">Faculty announcement — ICJ and UNSC seminar</span><span class="k">Faculty record</span></button></li>
+        <li><button type="button" data-src="doc-post-consumerlaw.jpg" data-cap="Faculty announcement — UP International Consumer Law Conference."><span class="t">Faculty announcement — Consumer Law Conference</span><span class="k">Faculty record</span></button></li>
+        <li><button type="button" data-src="consumerlaw-delegates.jpg" data-cap="NWU Faculty of Law delegation, Skukuza."><span class="t">NWU delegation, Skukuza</span><span class="k">Photograph</span></button></li>
+        <li><button type="button" data-src="student-seminar-brics.jpg" data-cap="Student seminar — BRICS and SADC."><span class="t">Student seminar — BRICS and SADC</span><span class="k">Photograph</span></button></li>
+        <li><button type="button" data-src="stles-iuri271-p1.jpg" data-cap="STLES report, IURI271, second semester 2025 — page 1: teaching and learning practices."><span class="t">STLES report — IURI271, p.1</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-iuri271-p2.jpg" data-cap="STLES report, IURI271 — page 2: overall lecturer evaluation, percentage per question."><span class="t">STLES report — IURI271, p.2</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-iuri271-p3.jpg" data-cap="STLES report, IURI271 — page 3: module evaluation and student perceptions."><span class="t">STLES report — IURI271, p.3</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-iuri271-p4.jpg" data-cap="STLES report, IURI271 — page 4: qualitative feedback."><span class="t">STLES report — IURI271, p.4</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-pplm824-p1.jpg" data-cap="STLES report, PPLM824, second semester 2025 — page 1: teaching and learning practices."><span class="t">STLES report — PPLM824, p.1</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-pplm824-p2.jpg" data-cap="STLES report, PPLM824 — page 2: overall lecturer evaluation, percentage per question."><span class="t">STLES report — PPLM824, p.2</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-pplm824-p3.jpg" data-cap="STLES report, PPLM824 — page 3: module evaluation and student perceptions."><span class="t">STLES report — PPLM824, p.3</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-pplm824-p4.jpg" data-cap="STLES report, PPLM824 — page 4: qualitative feedback."><span class="t">STLES report — PPLM824, p.4</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="stles-pplm824-p5.jpg" data-cap="STLES report, PPLM824 — page 5: qualitative feedback, continued."><span class="t">STLES report — PPLM824, p.5</span><span class="k">Student voice</span></button></li>
+        <li><button type="button" data-src="cert-up-mentorship.jpg" data-cap="Certificate of Appreciation, Final-Year Mentorship Programme, University of Pretoria Career Services, 18 November 2025."><span class="t">Certificate — UP Final-Year Mentorship Programme</span><span class="k">Mentorship</span></button></li>
+        <li><button type="button" data-src="cert-pg-supervision.jpg" data-cap="Certificate of Participation — Postgraduate Supervision Workshop, University Capacity Development Programme, NWU Potchefstroom Campus, 5–7 May 2026. Presented with Higher Degrees Academic Support and Exactica."><span class="t">Certificate — UCDP Postgraduate Supervision Workshop</span><span class="k">Development</span></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="slide alt" id="panel" data-dur="16" data-nav="For the panel">
+    <div class="inner">
+      <p class="kicker">For panel members</p>
+      <h2>Working score sheet</h2>
+      <p class="lede">A tally for use during discussion. Nothing is recorded or sent anywhere — it clears when the page reloads, and it does not replace the official evaluation instrument.</p>
+      <div class="scorer" id="scorer"></div>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="slide" id="close" data-dur="11" data-nav="Contact">
+    <div class="inner">
+      <img class="logo" src="nwu-logo-purple.png" alt="North-West University" width="440" height="399">
+      <h2>Masego Mokgoko</h2>
+      <p>Lecturer, Faculty of Law, North-West University.</p>
+      <dl class="contact">
+        <div><dt>Faculty</dt><dd>Law — undergraduate and postgraduate studies</dd></div>
+        <div><dt>Campuses</dt><dd>Potchefstroom and Mahikeng</dd></div>
+        <div><dt>Modules</dt><dd>IURI271 Criminal Procedure<br>PPLM824 Public International Law</dd></div>
+      </dl>
+    </div>
+  </section>
+
+</div>
+
+<div class="controls">
+  <button type="button" id="menuBtn" class="menu-btn" aria-label="All slides">&#9776;</button>
+  <button type="button" id="play" aria-pressed="true" aria-label="Pause automatic advance"><svg viewBox="0 0 14 14" width="13" height="13" aria-hidden="true"><rect x="2.5" y="1.5" width="3.2" height="11" fill="currentColor"/><rect x="8.3" y="1.5" width="3.2" height="11" fill="currentColor"/></svg></button>
+  <button type="button" id="prev" aria-label="Previous slide">&#8249;</button>
+  <span class="counter" id="counter">1 / 12</span>
+  <button type="button" id="next" aria-label="Next slide">&#8250;</button>
+</div>
+
+<p class="hint" id="hint">Advancing automatically — press space, or touch anything, to take over</p>
+
+<div id="menu" role="dialog" aria-modal="true" aria-label="All slides">
+  <button class="close" type="button" aria-label="Close">&times;</button>
+  <img class="logo" src="nwu-logo-white.png" alt="North-West University" width="440" height="399">
+  <nav id="menunav"></nav>
+</div>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Evidence viewer">
+  <button class="x" type="button" aria-label="Close">&times;</button>
+  <button class="nav prev" type="button" aria-label="Previous">&#8249;</button>
+  <img alt="">
+  <button class="nav next" type="button" aria-label="Next">&#8250;</button>
+  <p class="cap"></p>
+</div>
+<script src="fflate.min.js"></script>
+<script src="three.min.js"></script>
+<script>
+(function(){
+"use strict";
+var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ================= deck navigation ================= */
+var slides = [].slice.call(document.querySelectorAll('.slide'));
+var current = 0;
+var progress = document.getElementById('progress');
+var counter = document.getElementById('counter');
+var prevBtn = document.getElementById('prev');
+var nextBtn = document.getElementById('next');
+var hint = document.getElementById('hint');
+var railBtns = [], menuBtns = [];
+
+function buildNav(container, store){
+  var ol = document.createElement('ol');
+  slides.forEach(function(s, i){
+    if (s.id === 'statement') ol.appendChild(groupLabel('Portfolio criteria'));
+    if (s.id === 'scholarship') ol.appendChild(groupLabel('Supporting'));
+    var li = document.createElement('li');
+    var b = document.createElement('button');
+    b.type = 'button';
+    var crit = s.getAttribute('data-crit');
+    b.innerHTML = (crit ? '<span class="n">' + crit + '</span>' : '') + s.getAttribute('data-nav');
+    b.addEventListener('click', function(){ go(i); closeMenu(); });
+    li.appendChild(b); ol.appendChild(li); store.push(b);
+  });
+  container.appendChild(ol);
+}
+function groupLabel(t){
+  var li = document.createElement('li');
+  li.className = 'group'; li.textContent = t;
+  return li;
+}
+buildNav(document.getElementById('railnav'), railBtns);
+buildNav(document.getElementById('menunav'), menuBtns);
+
+/* scroll cues */
+slides.forEach(function(s){
+  var cue = document.createElement('div');
+  cue.className = 'cue';
+  cue.innerHTML = '<span>scroll for more \u2193</span>';
+  s.appendChild(cue);
+  s._cue = cue;
+  s.addEventListener('scroll', function(){ updateCue(s); }, {passive:true});
+});
+function updateCue(s){
+  if (!s._cue) return;
+  var more = s.scrollHeight - s.clientHeight - s.scrollTop > 10;
+  s._cue.classList.toggle('show', more);
+}
+window.addEventListener('resize', function(){ updateCue(slides[current]); });
+
+function go(i, skipHash){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i === current && slides[i].classList.contains('active')) return;
+  slides[current].classList.remove('active');
+  current = i;
+  var s = slides[current];
+  s.classList.add('active');
+  s.scrollTop = 0;
+  progress.style.width = ((current + 1) / slides.length * 100) + '%';
+  counter.textContent = (current + 1) + ' / ' + slides.length;
+  prevBtn.disabled = current === 0;
+  nextBtn.disabled = current === slides.length - 1;
+  [railBtns, menuBtns].forEach(function(set){
+    set.forEach(function(b, n){ b.setAttribute('aria-current', n === current ? 'true' : 'false'); });
+  });
+  if (!skipHash && history.replaceState) history.replaceState(null, '', '#' + s.id);
+  if (s.id === 'reach' && window.__globeResize) window.__globeResize();
+  if (typeof drawChart === 'function'){
+    drawChart(false);
+    if (s.id === 'stles') setTimeout(function(){ drawChart(true); }, 120);
+  }
+  setTimeout(function(){ updateCue(s); }, 60);
+  if (typeof scheduleAuto === 'function') scheduleAuto();
+  if (hint && current > 0){ hint.classList.add('gone'); }
+}
+prevBtn.addEventListener('click', function(){ go(current - 1); });
+nextBtn.addEventListener('click', function(){ go(current + 1); });
+
+/* ---------- automatic advance ---------- */
+var playBtn = document.getElementById('play');
+var timerBar = document.getElementById('timer');
+var auto = !reduce;
+var autoT = null;
+var PAUSE_ICON = '<svg viewBox="0 0 14 14" width="13" height="13" aria-hidden="true"><rect x="2.5" y="1.5" width="3.2" height="11" fill="currentColor"/><rect x="8.3" y="1.5" width="3.2" height="11" fill="currentColor"/></svg>';
+var PLAY_ICON = '<svg viewBox="0 0 14 14" width="13" height="13" aria-hidden="true"><path d="M3 1.5 L12 7 L3 12.5 Z" fill="currentColor"/></svg>';
+
+function stopTimerBar(){
+  timerBar.style.transition = 'none';
+  timerBar.style.width = '0%';
+}
+function runTimerBar(ms){
+  stopTimerBar();
+  void timerBar.offsetWidth;
+  timerBar.style.transition = 'width ' + ms + 'ms linear';
+  timerBar.style.width = '100%';
+}
+function scheduleAuto(){
+  clearTimeout(autoT);
+  stopTimerBar();
+  if (!auto) return;
+  var ms = (parseFloat(slides[current].getAttribute('data-dur')) || 15) * 1000;
+  runTimerBar(ms);
+  autoT = setTimeout(function(){
+    go(current + 1 >= slides.length ? 0 : current + 1);
+  }, ms);
+}
+function setAuto(on){
+  auto = on;
+  playBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  playBtn.innerHTML = on ? PAUSE_ICON : PLAY_ICON;
+  playBtn.setAttribute('aria-label', on ? 'Pause automatic advance' : 'Play automatically');
+  if (on) scheduleAuto(); else { clearTimeout(autoT); stopTimerBar(); }
+}
+playBtn.addEventListener('click', function(){ setAuto(!auto); });
+setAuto(auto);
+
+/* any deliberate interaction hands control to the reader */
+function pauseOnInteract(e){
+  if (!auto) return;
+  if (e && e.target && e.target.closest && e.target.closest('#play')) return;
+  setAuto(false);
+}
+document.addEventListener('pointerdown', pauseOnInteract);
+document.addEventListener('wheel', pauseOnInteract, {passive:true});
+
+var menu = document.getElementById('menu');
+function closeMenu(){ menu.classList.remove('open'); }
+document.getElementById('menuBtn').addEventListener('click', function(){ menu.classList.add('open'); });
+menu.querySelector('.close').addEventListener('click', closeMenu);
+
+/* keyboard */
+document.addEventListener('keydown', function(e){
+  var lbOpen = document.getElementById('lightbox').classList.contains('open');
+  if (lbOpen) return;
+  if (menu.classList.contains('open') && e.key === 'Escape'){ closeMenu(); return; }
+  if (e.key === ' ' || e.key === 'p' || e.key === 'P'){ e.preventDefault(); setAuto(!auto); return; }
+  if (e.key === 'ArrowRight' || e.key === 'PageDown'){ e.preventDefault(); setAuto(false); go(current + 1); }
+  else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); setAuto(false); go(current - 1); }
+  else if (e.key === 'Home'){ e.preventDefault(); setAuto(false); go(0); }
+  else if (e.key === 'End'){ e.preventDefault(); setAuto(false); go(slides.length - 1); }
+});
+
+/* swipe */
+var sx = 0, sy = 0, tracking = false;
+document.addEventListener('touchstart', function(e){
+  if (e.target.closest('#globe')) return;
+  tracking = true; sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+}, {passive:true});
+document.addEventListener('touchend', function(e){
+  if (!tracking) return;
+  tracking = false;
+  var dx = e.changedTouches[0].clientX - sx;
+  var dy = e.changedTouches[0].clientY - sy;
+  if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.6){
+    go(current + (dx < 0 ? 1 : -1));
+  }
+}, {passive:true});
+
+/* open on hash */
+var start = 0;
+if (location.hash){
+  slides.forEach(function(s, i){ if ('#' + s.id === location.hash) start = i; });
+}
+go(start, true);
+window.addEventListener('hashchange', function(){
+  slides.forEach(function(s, i){ if ('#' + s.id === location.hash) go(i, true); });
+});
+
+
+/* ================= lightbox ================= */
+var lb = document.getElementById('lightbox');
+var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('.cap');
+var items = [].slice.call(document.querySelectorAll('[data-gallery] button[data-src]'));
+var idx = 0, opener = null;
+function show(i){
+  idx = (i + items.length) % items.length;
+  lbImg.src = items[idx].getAttribute('data-src');
+  lbImg.alt = items[idx].getAttribute('data-cap') || '';
+  lbCap.textContent = items[idx].getAttribute('data-cap') || '';
+}
+function openLb(i){ opener = items[i]; show(i); lb.classList.add('open'); lb.querySelector('.x').focus(); }
+function closeLb(){ lb.classList.remove('open'); lbImg.src = ''; if (opener) opener.focus(); }
+items.forEach(function(b, i){ b.addEventListener('click', function(){ openLb(i); }); });
+lb.querySelector('.x').addEventListener('click', closeLb);
+lb.querySelector('.prev').addEventListener('click', function(){ show(idx - 1); });
+lb.querySelector('.next').addEventListener('click', function(){ show(idx + 1); });
+lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', function(e){
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb();
+  if (e.key === 'ArrowLeft'){ e.preventDefault(); show(idx - 1); }
+  if (e.key === 'ArrowRight'){ e.preventDefault(); show(idx + 1); }
+});
+
+/* ================= working score sheet ================= */
+var ROWS = ['1 · Teaching statement','2 · Assessment plan','3 · Inclusive teaching practices','4 · Student voice','5 · Overall reflection','Portfolio'];
+var LEVELS = [{l:'Developing', v:2},{l:'Competent', v:4},{l:'Exceeds', v:5}];
+var picks = new Array(ROWS.length).fill(null);
+var scorer = document.getElementById('scorer');
+var totalEl;
+function renderTotal(){
+  var sum = picks.reduce(function(a,b){ return a + (b === null ? 0 : LEVELS[b].v); }, 0);
+  var done = picks.filter(function(p){ return p !== null; }).length;
+  var pct = Math.round(sum / 30 * 100);
+  var verdict;
+  if (done < ROWS.length) verdict = 'Select a level for each row. ' + done + ' of ' + ROWS.length + ' recorded.';
+  else if (sum > 25) verdict = 'Above 25/30. The participant may be considered for one of the five Novice Teacher Awards.';
+  else if (pct >= 60) verdict = 'Most scores fall in the competent band — meets minimum requirements, below the award threshold of 25/30.';
+  else verdict = 'Most scores fall in the developing band — room for improvement.';
+  totalEl.innerHTML = '<span class="big">' + sum + '<span style="font-size:.5em;color:var(--ink-soft)">/30</span></span>' +
+    '<span class="pct">' + pct + '%</span>' +
+    '<span class="acts"><button type="button" class="reset">Clear</button>' +
+    '<button type="button" class="dl"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">' +
+    '<path d="M8 1v9M4.5 6.5 8 10l3.5-3.5M2 13.5h12" fill="none" stroke="currentColor" stroke-width="1.6" ' +
+    'stroke-linecap="round" stroke-linejoin="round"/></svg>Download as Excel</button></span>' +
+    '<p class="verdict">' + verdict + '</p>';
+  totalEl.querySelector('.dl').addEventListener('click', downloadXlsx);
+  totalEl.querySelector('.reset').addEventListener('click', function(){
+    picks = new Array(ROWS.length).fill(null);
+    [].forEach.call(scorer.querySelectorAll('.levels button'), function(b){ b.setAttribute('aria-pressed','false'); });
+    renderTotal();
+  });
+}
+ROWS.forEach(function(name, r){
+  var row = document.createElement('div'); row.className = 'row';
+  var n = document.createElement('span'); n.className = 'name'; n.textContent = name;
+  var lv = document.createElement('div'); lv.className = 'levels';
+  LEVELS.forEach(function(L, i){
+    var b = document.createElement('button');
+    b.type = 'button'; b.textContent = L.l;
+    b.setAttribute('aria-pressed','false');
+    b.setAttribute('aria-label', name + ': ' + L.l);
+    b.addEventListener('click', function(){
+      [].forEach.call(lv.children, function(c){ c.setAttribute('aria-pressed','false'); });
+      b.setAttribute('aria-pressed','true');
+      picks[r] = i; renderTotal();
+    });
+    lv.appendChild(b);
+  });
+  row.appendChild(n); row.appendChild(lv); scorer.appendChild(row);
+});
+totalEl = document.createElement('div'); totalEl.className = 'total';
+scorer.appendChild(totalEl);
+renderTotal();
+
+
+
+/* ================= STLES chart ================= */
+var chartEl = document.getElementById('chart');
+if (chartEl){
+  var data = JSON.parse(chartEl.getAttribute('data-vals'));
+  data.forEach(function(row){
+    var g = document.createElement('div'); g.className = 'grp';
+    g.innerHTML = '<span class="lab">' + row[0] + '</span>' +
+      '<div class="track"><div class="bar a" data-w="' + row[1] + '"><span class="val">' + row[1].toFixed(2) + '</span></div></div>' +
+      '<div class="track"><div class="bar b" data-w="' + row[2] + '"><span class="val">' + row[2].toFixed(2) + '</span></div></div>';
+    chartEl.appendChild(g);
+  });
+  var axis = document.createElement('div');
+  axis.className = 'axis';
+  axis.innerHTML = '<span>0</span><span>25</span><span>50</span><span>75</span><span>100</span>';
+  chartEl.appendChild(axis);
+}
+function drawChart(on){
+  if (!chartEl) return;
+  [].forEach.call(chartEl.querySelectorAll('.bar'), function(b){
+    b.style.width = on ? b.getAttribute('data-w') + '%' : '0%';
+  });
+}
+
+/* ================= score sheet → .xlsx ================= */
+/* Builds a real Office Open XML workbook (a zip of XML parts) with fflate,
+   so the download is a proper .xlsx rather than a renamed CSV. */
+function esc(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function colName(n){
+  var s = '';
+  while (n > 0){ var m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = (n - m - 1) / 26; }
+  return s;
+}
+/* cell: {v:value, s:styleIndex, n:true for numeric} */
+function sheetXml(rows, cols){
+  var out = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+    '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">' +
+    '<cols>';
+  cols.forEach(function(w, i){
+    out += '<col min="' + (i+1) + '" max="' + (i+1) + '" width="' + w + '" customWidth="1"/>';
+  });
+  out += '</cols><sheetData>';
+  rows.forEach(function(cells, r){
+    out += '<row r="' + (r+1) + '">';
+    cells.forEach(function(c, i){
+      if (c === null || c === undefined) return;
+      var ref = colName(i+1) + (r+1);
+      var st = c.s ? ' s="' + c.s + '"' : '';
+      if (c.n) out += '<c r="' + ref + '"' + st + '><v>' + c.v + '</v></c>';
+      else if (c.v === '') out += '<c r="' + ref + '"' + st + '/>';
+      else out += '<c r="' + ref + '"' + st + ' t="inlineStr"><is><t xml:space="preserve">' + esc(c.v) + '</t></is></c>';
+    });
+    out += '</row>';
+  });
+  out += '</sheetData></worksheet>';
+  return out;
+}
+
+var STYLES = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+'<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">' +
+  '<fonts count="6">' +
+    '<font><sz val="11"/><name val="Calibri"/></font>' +
+    '<font><b/><sz val="15"/><color rgb="FF582C83"/><name val="Calibri"/></font>' +
+    '<font><sz val="10"/><color rgb="FF595959"/><name val="Calibri"/></font>' +
+    '<font><b/><sz val="11"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font>' +
+    '<font><b/><sz val="11"/><name val="Calibri"/></font>' +
+    '<font><i/><sz val="10"/><color rgb="FF595959"/><name val="Calibri"/></font>' +
+  '</fonts>' +
+  '<fills count="4">' +
+    '<fill><patternFill patternType="none"/></fill>' +
+    '<fill><patternFill patternType="gray125"/></fill>' +
+    '<fill><patternFill patternType="solid"><fgColor rgb="FF582C83"/><bgColor indexed="64"/></patternFill></fill>' +
+    '<fill><patternFill patternType="solid"><fgColor rgb="FFF2EDF7"/><bgColor indexed="64"/></patternFill></fill>' +
+  '</fills>' +
+  '<borders count="3">' +
+    '<border><left/><right/><top/><bottom/><diagonal/></border>' +
+    '<border><left style="thin"><color rgb="FFD9D9D9"/></left><right style="thin"><color rgb="FFD9D9D9"/></right>' +
+      '<top style="thin"><color rgb="FFD9D9D9"/></top><bottom style="thin"><color rgb="FFD9D9D9"/></bottom><diagonal/></border>' +
+    '<border><left/><right/><top style="medium"><color rgb="FF582C83"/></top><bottom/><diagonal/></border>' +
+  '</borders>' +
+  '<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>' +
+  '<cellXfs count="9">' +
+    '<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>' +                                                     /* 0 default */
+    '<xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/>' +                                       /* 1 title */
+    '<xf numFmtId="0" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1"/>' +                                       /* 2 subtitle */
+    '<xf numFmtId="0" fontId="3" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center"/></xf>' + /* 3 header */
+    '<xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>' + /* 4 body */
+    '<xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="center"/></xf>' + /* 5 number */
+    '<xf numFmtId="0" fontId="4" fillId="3" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1"/>' +          /* 6 total label */
+    '<xf numFmtId="0" fontId="4" fillId="3" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center"/></xf>' + /* 7 total number */
+    '<xf numFmtId="0" fontId="5" fillId="0" borderId="0" xfId="0" applyFont="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>' + /* 8 note */
+  '</cellXfs>' +
+  '<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>' +
+'</styleSheet>';
+
+var EVIDENCE = [
+  'Essay, 500-750 words',
+  'Video, 5 minutes, plus completed framework',
+  'Essay, 1 000 words',
+  'Essay, 1 000 words, plus artefacts',
+  '800 words, or a 3-minute video',
+  'Navigation, clarity, coherence'
+];
+
+function buildWorkbook(){
+  var today = new Date().toISOString().slice(0, 10);
+  var rows = [];
+  rows.push([{v:'NWU Novice Teacher Award 2026 \u2014 portfolio score sheet', s:1}]);
+  rows.push([{v:'Participant: Masego Mokgoko', s:2}]);
+  rows.push([{v:'Faculty of Law \u00b7 IURI271 Criminal Procedure (Potchefstroom) \u00b7 PPLM824 Public International Law (Mahikeng)', s:2}]);
+  rows.push([{v:'Exported: ' + today, s:2}]);
+  rows.push([{v:'Evaluator:', s:2}, {v:'', s:4}]);
+  rows.push([]);
+  rows.push([
+    {v:'Criterion', s:3}, {v:'Level awarded', s:3},
+    {v:'Points', s:3}, {v:'Evidence submitted', s:3}, {v:'Evaluator comments', s:3}
+  ]);
+
+  var sum = 0, complete = true;
+  ROWS.forEach(function(name, i){
+    var p = picks[i];
+    if (p === null) complete = false; else sum += LEVELS[p].v;
+    rows.push([
+      {v:name.replace(' \u00b7 ', ' \u2013 '), s:4},
+      {v: p === null ? '' : LEVELS[p].l, s:4},
+      p === null ? {v:'', s:5} : {v:LEVELS[p].v, n:true, s:5},
+      {v:EVIDENCE[i], s:4},
+      {v:'', s:4}
+    ]);
+  });
+
+  rows.push([
+    {v:'Total', s:6}, {v:'', s:6},
+    {v:sum, n:true, s:7},
+    {v:'out of 30', s:6}, {v:'', s:6}
+  ]);
+  rows.push([
+    {v:'Percentage', s:6}, {v:'', s:6},
+    {v:Math.round(sum / 30 * 100) + '%', s:7},
+    {v:'', s:6}, {v:'', s:6}
+  ]);
+  rows.push([]);
+
+  var note;
+  if (!complete) note = 'Incomplete \u2014 not every criterion has a level recorded. The total above reflects only the criteria scored so far.';
+  else if (sum > 25) note = 'Above 25 out of 30. The participant may be considered for one of the five Novice Teacher Awards.';
+  else note = 'At or below 25 out of 30 \u2014 below the threshold for award consideration.';
+  rows.push([{v:note, s:8}]);
+  rows.push([{v:'Levels: Developing (1\u20132 points) \u00b7 Competent (3\u20134 points) \u00b7 Exceeds expectation (5 points).', s:8}]);
+  rows.push([{v:'This sheet is a working aid exported from the portfolio deck. It does not replace the official NWU evaluation instrument.', s:8}]);
+
+  return sheetXml(rows, [36, 20, 9, 34, 40]);
+}
+
+function downloadXlsx(){
+  if (typeof fflate === 'undefined'){ alert('The spreadsheet library did not load. Check that fflate.min.js is present.'); return; }
+  var enc = fflate.strToU8;
+  var files = {
+    '[Content_Types].xml': enc('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">' +
+      '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>' +
+      '<Default Extension="xml" ContentType="application/xml"/>' +
+      '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>' +
+      '<Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>' +
+      '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>' +
+      '</Types>'),
+    '_rels/.rels': enc('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+      '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>' +
+      '</Relationships>'),
+    'xl/workbook.xml': enc('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" ' +
+      'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">' +
+      '<sheets><sheet name="Score sheet" sheetId="1" r:id="rId1"/></sheets></workbook>'),
+    'xl/_rels/workbook.xml.rels': enc('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+      '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>' +
+      '<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>' +
+      '</Relationships>'),
+    'xl/styles.xml': enc(STYLES),
+    'xl/worksheets/sheet1.xml': enc(buildWorkbook())
+  };
+  var zipped = fflate.zipSync(files, {level:6});
+  var blob = new Blob([zipped], {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'NWU-Novice-Teacher-Award-2026-Mokgoko-score-sheet.xlsx';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+}
+
+/* ================= 3D globe ================= */
+var COAST = [[[-59.57,-80.04],[-59.57,-80.04]],[[-159.21,-79.5],[-159.21,-79.5]],[[-45.15,-78.05],[-45.15,-78.05]],[[-121.21,-73.5],[-121.21,-73.5]],[[-125.56,-73.48],[-125.56,-73.48]],[[-98.98,-71.93],[-98.98,-71.93]],[[-68.45,-70.96],[-68.45,-70.96]],[[-180.0,-84.71],[-180.0,-84.71]],[[-67.75,-53.85],[-67.75,-53.85]],[[-58.55,-51.1],[-58.55,-51.1]],[[70.28,-49.71],[70.28,-49.71]],[[145.4,-40.79],[145.4,-40.79]],[[173.02,-40.92],[173.02,-40.92]],[[174.61,-36.16],[174.61,-36.16]],[[167.12,-22.16],[167.12,-22.16]],[[178.37,-17.34],[178.37,-17.34]],[[-180.0,-16.56],[178.73,-17.01],[178.6,-16.64],[179.41,-16.38],[-180.0,-16.07]],[[-180.0,-16.07],[-180.0,-16.56]],[[-180.0,-16.07],[-180.0,-16.56]],[[167.85,-16.47],[167.85,-16.47]],[[167.11,-14.93],[167.11,-14.93]],[[50.06,-13.56],[50.06,-13.56]],[[143.56,-13.76],[143.56,-13.76]],[[162.12,-10.48],[162.12,-10.48]],[[120.71,-10.24],[120.71,-10.24]],[[160.85,-9.87],[160.85,-9.87]],[[161.68,-9.6],[161.68,-9.6]],[[124.44,-10.14],[124.44,-10.14]],[[117.9,-8.09],[117.9,-8.09]],[[122.9,-8.09],[122.9,-8.09]],[[159.88,-8.34],[159.88,-8.34]],[[157.54,-7.35],[157.54,-7.35]],[[108.62,-6.78],[108.62,-6.78]],[[134.73,-6.21],[134.73,-6.21]],[[155.88,-6.82],[155.88,-6.82]],[[151.98,-5.48],[151.98,-5.48]],[[127.25,-3.46],[127.25,-3.46]],[[130.47,-3.09],[130.47,-3.09]],[[153.14,-4.5],[153.14,-4.5]],[[134.14,-1.15],[134.14,-1.15]],[[125.24,1.42],[125.24,1.42]],[[128.69,1.13],[128.69,1.13]],[[105.82,-5.85],[105.82,-5.85]],[[117.87,1.83],[117.87,1.83]],[[126.38,8.41],[126.38,8.41]],[[81.22,6.2],[81.22,6.2]],[[-60.94,10.11],[-60.94,10.11]],[[123.98,10.28],[123.98,10.28]],[[118.5,9.32],[118.5,9.32]],[[121.88,11.89],[121.88,11.89]],[[125.5,12.16],[125.5,12.16]],[[121.53,13.07],[121.53,13.07]],[[121.32,18.5],[121.32,18.5]],[[-65.59,18.23],[-65.59,18.23]],[[-76.9,17.87],[-76.9,17.87]],[[-72.58,19.87],[-72.58,19.87]],[[110.34,18.68],[110.34,18.68]],[[-155.54,19.08],[-155.54,19.08]],[[-156.08,20.64],[-156.08,20.64]],[[-156.76,21.18],[-156.76,21.18]],[[-157.65,21.32],[-157.65,21.32]],[[-159.35,21.98],[-159.35,21.98]],[[-79.68,22.77],[-79.68,22.77]],[[-77.54,23.76],[-77.54,23.76]],[[121.18,22.79],[121.18,22.79]],[[-77.82,26.58],[-77.82,26.58]],[[-77.0,26.59],[-77.0,26.59]],[[134.64,34.15],[134.64,34.15]],[[34.58,35.67],[34.58,35.67]],[[23.7,35.71],[23.7,35.71]],[[15.52,38.23],[15.52,38.23]],[[9.21,41.21],[9.21,41.21]],[[140.98,37.14],[140.98,37.14]],[[9.56,42.15],[9.56,42.15]],[[143.91,44.17],[143.91,44.17]],[[-63.66,46.55],[-63.66,46.55]],[[-61.81,49.11],[-61.81,49.11]],[[-123.51,48.51],[-123.51,48.51]],[[-56.13,50.69],[-56.13,50.69]],[[-132.71,54.04],[-132.71,54.04]],[[143.65,50.75],[143.65,50.75]],[[-6.79,52.26],[-6.79,52.26]],[[12.69,55.61],[12.69,55.61]],[[-153.01,57.12],[-153.01,57.12]],[[-3.0,58.63],[-3.0,58.63]],[[-165.58,59.91],[-165.58,59.91]],[[-79.27,62.16],[-79.27,62.16]],[[-81.9,62.71],[-81.9,62.71]],[[-171.73,63.78],[-171.73,63.78]],[[-85.16,65.66],[-85.16,65.66]],[[-14.51,66.46],[-14.51,66.46]],[[-75.87,67.15],[-75.87,67.15]],[[-180.0,68.96],[-174.93,67.21],[-175.01,66.58],[-174.34,66.34],[-174.57,67.06],[-171.86,66.91],[-169.9,65.98],[-170.89,65.54],[-172.53,65.44],[-172.56,64.46],[-172.95,64.25],[-175.98,64.92],[-176.21,65.36],[-178.36,65.39],[-178.9,65.74],[-178.69,66.11],[-179.88,65.87],[-179.43,65.4],[-180.0,64.98]],[[-180.0,64.98],[-180.0,68.96]],[[-95.65,69.11],[-95.65,69.11]],[[-180.0,71.52],[-180.0,71.52]],[[-180.0,71.52],[-180.0,71.52]],[[-90.55,69.5],[-90.55,69.5]],[[-114.17,73.12],[-114.17,73.12]],[[-104.5,73.42],[-104.5,73.42]],[[-76.34,73.1],[-76.34,73.1]],[[-86.56,73.16],[-86.56,73.16]],[[-100.36,73.84],[-100.36,73.84]],[[143.6,73.21],[143.6,73.21]],[[-93.2,72.77],[-93.2,72.77]],[[-120.46,71.4],[-120.46,71.4]],[[150.73,75.08],[150.73,75.08]],[[-93.61,74.98],[-93.61,74.98]],[[145.09,75.56],[145.09,75.56]],[[-98.5,76.72],[-98.5,76.72]],[[-108.21,76.2],[-108.21,76.2]],[[57.53,70.72],[57.53,70.72]],[[-94.68,77.1],[-94.68,77.1]],[[-116.2,77.65],[-116.2,77.65]],[[49.11,41.28],[49.11,41.28]],[[-180.0,64.98],[179.99,64.97],[178.71,64.53],[177.41,64.61],[179.37,62.98],[179.23,62.3],[177.36,62.52],[173.68,61.65],[170.7,60.34],[170.33,59.88],[168.9,60.57],[166.29,59.79],[165.84,60.16],[164.88,59.73],[163.54,59.87],[162.02,58.24],[162.05,57.84],[163.19,57.62],[163.06,56.16],[162.13,56.12],[161.7,55.29],[162.12,54.85],[160.37,54.35],[160.02,53.2],[158.53,52.96],[158.23,51.94],[156.79,51.01],[155.43,55.38],[155.92,56.77],[156.76,57.36],[156.81,57.83],[158.36,58.06],[163.67,61.14],[164.47,62.55],[163.26,62.47],[162.66,61.64],[160.12,60.55],[159.3,61.77],[156.72,61.43],[154.22,59.76],[155.04,59.15],[151.26,58.78],[151.34,59.5],[149.78,59.66],[148.55,59.16],[145.49,59.34],[142.2,59.04],[135.13,54.73],[136.7,54.6],[137.19,53.98],[138.16,53.75],[138.8,54.26],[139.9,54.19],[141.35,53.09],[141.38,52.24],[140.6,51.24],[140.06,48.45],[138.22,46.31],[134.87,43.4],[133.54,42.81],[132.91,42.8],[132.28,43.28],[129.97,41.94],[129.7,40.88],[127.53,39.76],[127.39,39.21],[128.35,38.61],[129.46,36.78],[129.47,35.63],[129.09,35.08],[126.49,34.39],[126.56,35.68],[126.12,36.73],[126.86,36.89],[126.18,37.75],[125.69,37.94],[125.28,37.67],[124.71,38.11],[125.22,38.67],[125.32,39.55],[124.26,39.93],[121.05,38.9],[121.59,39.36],[121.38,39.75],[122.17,40.42],[121.64,40.95],[119.02,39.25],[118.04,39.2],[117.53,38.74],[118.06,38.06],[118.88,37.9],[118.91,37.45],[119.7,37.16],[120.82,37.87],[122.36,37.46],[122.52,36.93],[121.1,36.65],[119.15,34.91],[120.23,34.36],[121.91,31.69],[121.89,30.95],[121.27,30.68],[122.09,29.83],[121.68,28.23],[121.13,28.14],[118.66,24.55],[115.89,22.78],[114.76,22.67],[114.15,22.22],[113.81,22.55],[113.24,22.05],[110.79,21.4],[110.44,20.34],[109.89,20.28],[109.63,21.01],[109.86,21.39],[108.52,21.72],[106.71,20.7],[105.88,19.75],[105.66,19.06],[107.36,16.7],[108.88,15.28],[109.33,13.43],[109.2,11.67],[105.16,8.6],[104.8,9.24],[105.08,9.92],[103.5,10.63],[102.58,12.19],[101.69,12.65],[100.83,12.63],[100.98,13.41],[100.1,13.41],[99.22,9.24],[99.87,9.21],[100.46,7.43],[102.96,5.53],[103.38,4.85],[103.5,2.79],[104.23,1.29],[103.52,1.23],[101.39,2.76],[100.2,5.31],[100.09,6.46],[98.5,8.38],[98.34,7.79],[98.15,8.35],[98.77,11.44],[98.43,12.03],[98.51,13.12],[97.16,16.93],[95.37,15.71],[94.19,16.04],[94.54,17.28],[94.33,18.21],[93.54,19.37],[93.66,19.73],[93.08,19.86],[92.37,20.67],[91.42,22.77],[90.5,22.8],[90.27,21.84],[89.03,22.06],[88.89,21.69],[86.98,21.5],[87.03,20.74],[86.5,20.15],[85.06,19.48],[82.19,17.02],[82.19,16.56],[80.33,15.9],[80.02,15.14],[80.29,13.01],[79.86,12.06],[79.86,10.36],[79.34,10.31],[78.89,9.55],[79.19,9.22],[78.28,8.93],[77.54,7.97],[76.59,8.9],[74.86,12.74],[74.44,14.62],[73.53,15.99],[72.63,21.36],[71.17,20.76],[70.47,20.88],[69.17,22.09],[69.64,22.45],[69.35,22.84],[67.44,23.95],[66.37,25.42],[61.5,25.08],[57.4,25.74],[56.97,26.97],[56.49,27.14],[54.72,26.48],[51.52,27.87],[50.11,30.15],[49.58,29.99],[48.94,30.32],[48.57,29.93],[47.98,29.98],[48.81,27.69],[50.15,26.69],[50.11,25.94],[50.81,24.75],[51.01,26.01],[51.59,25.8],[51.39,24.63],[51.8,24.02],[54.01,24.12],[56.36,26.4],[56.4,24.93],[56.85,24.24],[58.73,23.57],[59.81,22.31],[58.49,20.43],[57.83,20.24],[57.7,18.95],[56.61,18.57],[56.28,17.88],[55.27,17.63],[55.27,17.23],[52.39,16.38],[52.17,15.6],[49.57,14.71],[48.68,14.0],[45.63,13.29],[44.99,12.7],[43.48,12.64],[42.6,15.21],[42.65,16.78],[40.94,19.49],[39.14,21.29],[39.07,22.58],[38.49,23.69],[37.49,24.29],[36.93,25.6],[35.13,28.06],[34.63,28.06],[34.92,29.5],[33.92,27.65],[32.42,29.85],[34.1,26.14],[35.69,23.93],[35.53,23.1],[36.87,22.0],[37.48,18.61],[38.41,18.0],[39.27,15.92],[43.32,12.39],[43.29,11.98],[42.72,11.74],[44.12,10.45],[44.61,10.44],[51.11,12.02],[51.05,10.64],[49.45,6.8],[47.74,4.22],[46.56,2.86],[43.14,0.29],[41.59,-1.68],[40.26,-2.57],[39.2,-4.68],[38.8,-6.48],[39.44,-6.84],[39.19,-8.49],[40.48,-10.77],[40.78,-14.69],[39.45,-16.72],[37.41,-17.59],[34.79,-19.78],[34.7,-20.5],[35.56,-22.09],[35.46,-24.12],[32.57,-25.73],[32.92,-26.22],[32.2,-28.75],[28.22,-32.77],[25.78,-33.95],[22.57,-33.86],[19.61,-34.82],[18.24,-33.87],[17.93,-32.61],[18.25,-32.43],[18.22,-31.66],[15.21,-27.09],[14.26,-22.11],[11.8,-18.07],[11.78,-15.79],[12.5,-13.55],[13.64,-12.04],[13.69,-10.73],[12.88,-9.17],[13.24,-8.56],[11.91,-5.04],[8.8,-1.11],[9.79,3.07],[9.41,3.73],[8.95,3.9],[8.5,4.77],[5.9,4.26],[4.33,6.27],[1.87,6.14],[-1.96,4.71],[-4.65,5.17],[-7.52,4.34],[-9.01,4.83],[-12.43,7.26],[-12.95,7.8],[-13.25,8.9],[-14.84,10.88],[-16.61,12.17],[-16.71,13.6],[-17.62,14.73],[-16.46,16.14],[-16.15,18.11],[-16.28,20.09],[-17.06,21.0],[-16.97,21.89],[-16.26,22.68],[-15.98,23.72],[-15.09,24.52],[-14.44,26.25],[-12.62,28.04],[-11.69,28.15],[-9.56,29.93],[-9.82,31.18],[-9.3,32.57],[-6.91,34.11],[-5.93,35.76],[-2.17,35.17],[1.47,36.61],[5.32,36.72],[6.26,37.11],[8.42,36.95],[9.51,37.35],[10.21,37.23],[10.18,36.72],[11.1,36.9],[10.6,36.41],[10.94,35.7],[10.81,34.83],[10.15,34.33],[10.34,33.79],[10.86,33.77],[11.49,33.14],[15.24,32.27],[15.71,31.38],[19.09,30.27],[20.05,30.99],[19.82,31.75],[20.13,32.24],[21.54,32.84],[22.89,32.64],[23.24,32.19],[24.92,31.9],[25.17,31.57],[26.49,31.59],[28.91,30.87],[30.98,31.56],[31.69,31.43],[31.96,30.93],[32.19,31.26],[33.77,30.97],[34.55,31.55],[36.0,34.65],[36.15,35.82],[35.78,36.28],[36.16,36.65],[34.71,36.8],[34.03,36.22],[32.51,36.11],[31.7,36.64],[30.62,36.68],[30.39,36.26],[29.7,36.14],[28.73,36.68],[27.64,36.66],[26.32,38.21],[26.8,38.99],[26.17,39.46],[27.28,40.42],[28.82,40.46],[29.24,41.22],[31.15,41.09],[33.51,42.02],[35.17,42.04],[38.35,40.95],[40.37,41.01],[41.55,41.54],[41.7,41.96],[41.45,42.64],[36.68,45.24],[37.4,45.41],[38.23,46.24],[37.67,46.64],[39.12,47.26],[34.96,46.27],[35.02,45.65],[36.53,45.47],[36.33,45.11],[33.88,44.36],[33.33,44.57],[33.55,45.03],[32.45,45.33],[33.59,45.85],[33.3,46.08],[31.74,46.33],[31.67,46.71],[30.75,46.58],[29.63,45.04],[28.84,44.91],[28.56,43.71],[27.68,42.58],[28.11,41.62],[28.99,41.3],[28.81,41.06],[27.62,41.0],[26.36,40.15],[26.06,40.82],[24.92,40.95],[23.72,40.69],[24.41,40.12],[23.9,39.96],[23.34,39.96],[22.82,40.48],[22.63,40.26],[23.35,39.19],[22.97,38.97],[24.02,38.22],[24.04,37.65],[23.11,37.92],[23.41,37.41],[22.78,37.3],[23.15,36.42],[22.49,36.41],[21.67,36.85],[21.12,38.31],[19.41,40.25],[19.54,41.72],[16.01,43.51],[15.18,44.24],[14.9,45.08],[14.26,45.23],[13.95,44.8],[13.66,45.14],[13.94,45.59],[13.14,45.74],[12.33,45.38],[12.26,44.6],[12.59,44.09],[15.14,41.96],[15.92,41.96],[16.17,41.74],[15.89,41.54],[18.48,40.17],[18.29,39.81],[16.87,40.44],[16.45,39.8],[17.17,39.43],[17.05,38.9],[16.63,38.84],[16.1,37.99],[15.68,37.91],[16.11,38.96],[15.41,40.05],[13.63,41.19],[12.11,41.71],[10.51,42.93],[10.2,43.92],[8.89,44.37],[6.53,43.13],[4.56,43.4],[3.1,43.07],[3.04,41.89],[2.09,41.23],[0.81,41.01],[-0.28,39.31],[0.11,38.74],[-0.68,37.64],[-1.44,37.44],[-2.15,36.67],[-4.37,36.68],[-5.38,35.95],[-5.87,36.03],[-6.52,36.94],[-8.9,36.87],[-8.84,38.27],[-9.53,38.74],[-8.77,40.76],[-8.98,42.59],[-9.39,43.03],[-7.98,43.75],[-1.9,43.42],[-1.38,44.02],[-1.19,46.01],[-2.96,47.57],[-4.49,47.96],[-4.59,48.68],[-3.3,48.9],[-1.62,48.64],[-1.94,49.78],[-0.99,49.35],[1.34,50.13],[1.64,50.95],[3.83,51.62],[4.71,53.09],[7.1,53.69],[8.12,53.53],[8.8,54.02],[8.12,55.52],[8.09,56.54],[8.54,57.11],[10.58,57.73],[10.25,56.89],[10.91,56.46],[9.65,55.47],[9.94,54.6],[10.95,54.36],[10.94,54.01],[12.52,54.47],[14.12,53.76],[17.62,54.85],[19.66,54.43],[19.89,54.87],[21.27,55.19],[21.09,56.78],[21.58,57.41],[22.52,57.75],[23.32,57.01],[24.12,57.03],[24.43,58.38],[23.43,58.61],[23.34,59.19],[25.86,59.61],[27.98,59.48],[29.12,60.03],[28.07,60.5],[22.87,59.85],[21.32,60.72],[21.54,61.7],[21.06,62.61],[21.54,63.19],[25.4,65.11],[25.3,65.53],[23.9,66.01],[22.18,65.72],[21.21,65.03],[21.37,64.41],[17.85,62.75],[17.12,61.34],[18.79,60.08],[17.87,58.95],[16.83,58.72],[15.88,56.1],[14.67,56.2],[14.1,55.41],[12.94,55.36],[11.03,58.86],[10.36,59.47],[8.38,58.31],[7.05,58.08],[5.66,58.59],[4.99,61.97],[5.91,62.62],[10.53,64.49],[14.76,67.81],[19.18,69.82],[23.02,70.2],[24.55,71.03],[28.16,71.19],[31.29,70.45],[30.0,70.19],[31.1,69.56],[32.13,69.91],[40.29,67.93],[41.06,67.46],[41.13,66.79],[40.02,66.27],[38.38,66.0],[33.18,66.63],[34.81,65.9],[34.94,64.41],[37.01,63.85],[37.14,64.33],[36.52,64.78],[37.18,65.14],[39.59,64.52],[40.44,64.76],[39.76,65.5],[42.09,66.48],[43.95,66.07],[44.53,66.76],[43.7,67.35],[44.19,67.95],[43.45,68.57],[46.25,68.25],[46.82,67.69],[45.56,67.57],[45.56,67.01],[46.35,66.67],[47.89,66.88],[48.14,67.52],[53.72,68.86],[54.47,68.81],[53.49,68.2],[54.73,68.1],[58.8,68.88],[59.94,68.28],[61.08,68.94],[60.03,69.52],[60.55,69.85],[63.5,69.55],[68.51,68.09],[69.18,68.62],[68.14,69.36],[66.93,69.45],[67.26,69.93],[66.7,71.03],[68.54,71.93],[69.19,72.84],[72.59,72.78],[72.79,72.22],[71.85,71.41],[72.47,71.09],[72.79,70.39],[72.56,69.02],[73.67,68.41],[71.28,66.32],[72.42,66.17],[73.92,66.79],[75.05,67.76],[74.47,68.33],[74.94,68.99],[73.84,69.07],[73.6,69.63],[74.4,70.63],[73.1,71.45],[74.89,72.12],[74.66,72.83],[75.16,72.86],[75.68,72.3],[75.29,71.34],[76.36,71.15],[75.9,71.87],[77.58,72.27],[79.65,72.32],[81.5,71.75],[80.61,72.58],[80.51,73.65],[86.82,73.94],[86.01,74.46],[87.17,75.12],[92.9,75.77],[93.24,76.05],[96.68,75.92],[98.92,76.45],[100.76,76.43],[101.99,77.29],[104.35,77.7],[106.07,77.37],[104.71,77.13],[106.97,76.97],[107.24,76.48],[111.08,76.71],[114.13,75.85],[113.89,75.33],[109.4,74.18],[112.12,73.79],[113.02,73.98],[113.53,73.34],[115.57,73.75],[118.78,73.59],[119.02,73.12],[123.2,72.97],[123.26,73.74],[126.98,73.57],[128.59,73.04],[129.05,72.4],[128.46,71.98],[129.71,71.19],[131.29,70.79],[132.25,71.84],[133.86,71.39],[135.56,71.66],[137.5,71.35],[138.23,71.63],[139.87,71.49],[139.15,72.42],[140.47,72.85],[149.5,72.2],[150.35,71.61],[152.97,70.84],[159.0,70.87],[159.83,70.45],[159.71,69.72],[160.94,69.44],[167.84,69.58],[169.58,68.69],[170.82,69.01],[170.01,69.65],[170.45,70.1],[175.72,69.88],[178.6,69.4],[-180.0,68.96]],[[-93.84,77.52],[-93.84,77.52]],[[-110.19,77.7],[-110.19,77.7]],[[24.72,77.85],[24.72,77.85]],[[-109.66,78.6],[-109.66,78.6]],[[-95.83,78.06],[-95.83,78.06]],[[-100.06,78.33],[-100.06,78.33]],[[105.08,78.31],[105.08,78.31]],[[18.25,79.7],[18.25,79.7]],[[25.45,80.41],[25.45,80.41]],[[51.14,80.55],[51.14,80.55]],[[99.94,78.88],[99.94,78.88]],[[-87.02,79.66],[-87.02,79.66]],[[-68.5,83.11],[-68.5,83.11]],[[-27.1,83.52],[-27.1,83.52]]];
+var host = document.getElementById('globe');
+var STOPS = [
+  {name:'Mahikeng',      lat:-25.808, lon: 25.617},
+  {name:'Potchefstroom', lat:-26.715, lon: 27.097},
+  {name:'The Hague',     lat: 52.078, lon:  4.288},
+  {name:'London',        lat: 51.507, lon: -0.128},
+  {name:'Skukuza',       lat:-24.995, lon: 31.593}
+];
+var ARCS = [[0,2],[0,3],[1,4]];   // Mahikeng to Europe, Potchefstroom to Skukuza
+function vec(lat, lon, r){
+  var p = lat * Math.PI/180, l = lon * Math.PI/180;
+  return new THREE.Vector3(Math.cos(p)*Math.sin(l)*r, Math.sin(p)*r, Math.cos(p)*Math.cos(l)*r);
+}
+if (typeof THREE === 'undefined'){
+  host.innerHTML = '<p class="globe-fallback">The interactive globe could not load. The four locations are listed alongside.</p>';
+} else {
+  var scene = new THREE.Scene();
+  var cam = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+  cam.position.z = 3.35;
+  var rend = new THREE.WebGLRenderer({antialias:true, alpha:true});
+  rend.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  host.appendChild(rend.domElement);
+
+  var globe = new THREE.Group();
+  scene.add(globe);
+  globe.add(new THREE.Mesh(new THREE.SphereGeometry(0.985, 48, 32), new THREE.MeshBasicMaterial({color:0x2E1443})));
+  globe.add(new THREE.Mesh(new THREE.SphereGeometry(1, 36, 24), new THREE.MeshBasicMaterial({color:0x6B45A0, wireframe:true, transparent:true, opacity:0.18})));
+
+  var coastMat = new THREE.LineBasicMaterial({color:0xC9A9E8, transparent:true, opacity:0.62});
+  COAST.forEach(function(line){
+    var pts = line.map(function(p){ return vec(p[1], p[0], 1.006); });
+    globe.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), coastMat));
+  });
+
+  var eqPts = [];
+  for (var e = 0; e <= 128; e++) eqPts.push(vec(0, e/128*360, 1.004));
+  globe.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(eqPts),
+    new THREE.LineBasicMaterial({color:0xA87C33, transparent:true, opacity:0.5})));
+
+  var markers = [];
+  STOPS.forEach(function(s){
+    var m = new THREE.Mesh(new THREE.SphereGeometry(0.026, 14, 12), new THREE.MeshBasicMaterial({color:0xD8BE86}));
+    m.position.copy(vec(s.lat, s.lon, 1.01));
+    globe.add(m); markers.push(m);
+    var halo = new THREE.Mesh(new THREE.RingGeometry(0.04, 0.05, 24),
+      new THREE.MeshBasicMaterial({color:0xD8BE86, transparent:true, opacity:0.35, side:THREE.DoubleSide}));
+    halo.position.copy(m.position); halo.lookAt(0,0,0);
+    globe.add(halo);
+  });
+
+  var travellers = [];
+  ARCS.forEach(function(pair){
+    var a = vec(STOPS[pair[0]].lat, STOPS[pair[0]].lon, 1.005);
+    var b = vec(STOPS[pair[1]].lat, STOPS[pair[1]].lon, 1.005);
+    var mid = a.clone().add(b).multiplyScalar(0.5).normalize().multiplyScalar(1 + a.distanceTo(b) * 0.28);
+    var curve = new THREE.QuadraticBezierCurve3(a, mid, b);
+    globe.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 64, 0.0055, 6, false),
+      new THREE.MeshBasicMaterial({color:0xA87C33, transparent:true, opacity:0.75})));
+    var dot = new THREE.Mesh(new THREE.SphereGeometry(0.017, 10, 8), new THREE.MeshBasicMaterial({color:0xF2E4C6}));
+    globe.add(dot);
+    travellers.push({curve:curve, dot:dot, t:Math.random()});
+  });
+
+  function size(){
+    var w = host.clientWidth, h = host.clientHeight || w;
+    if (!w || !h) return;
+    rend.setSize(w, h, false);
+    cam.aspect = w / h; cam.updateProjectionMatrix();
+  }
+  window.__globeResize = size;
+  size();
+  window.addEventListener('resize', size);
+
+  var rotY = -0.45, rotX = 0.30, tgtY = rotY, tgtX = rotX, spin = reduce ? 0 : 0.0016;
+  var drag = false, lastX = 0, lastY = 0;
+  function down(x, y){ drag = true; lastX = x; lastY = y; host.classList.add('dragging'); }
+  function move(x, y){
+    if (!drag) return;
+    tgtY += (x - lastX) * 0.006;
+    tgtX = Math.max(-1.2, Math.min(1.2, tgtX + (y - lastY) * 0.005));
+    lastX = x; lastY = y;
+  }
+  function up(){ drag = false; host.classList.remove('dragging'); }
+  host.addEventListener('mousedown', function(e){ down(e.clientX, e.clientY); });
+  window.addEventListener('mousemove', function(e){ move(e.clientX, e.clientY); });
+  window.addEventListener('mouseup', up);
+  host.addEventListener('touchstart', function(e){ down(e.touches[0].clientX, e.touches[0].clientY); }, {passive:true});
+  host.addEventListener('touchmove', function(e){ move(e.touches[0].clientX, e.touches[0].clientY); }, {passive:true});
+  host.addEventListener('touchend', up);
+
+  var stopBtns = [].slice.call(document.querySelectorAll('#stops button'));
+  stopBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      stopBtns.forEach(function(b){ b.setAttribute('aria-current','false'); });
+      btn.setAttribute('aria-current','true');
+      var k = +btn.getAttribute('data-i'), s = STOPS[k];
+      tgtY = -s.lon * Math.PI/180;
+      tgtX =  s.lat * Math.PI/180 * 0.85;
+      markers.forEach(function(m, i){ m.material.color.setHex(i === k ? 0xFFFFFF : 0xD8BE86); });
+    });
+  });
+  markers[0].material.color.setHex(0xFFFFFF);
+
+  var clock = new THREE.Clock();
+  (function loop(){
+    requestAnimationFrame(loop);
+    var d = clock.getDelta();
+    if (!document.getElementById('reach').classList.contains('active')) return;
+    if (!drag) tgtY += spin;
+    rotY += (tgtY - rotY) * 0.075;
+    rotX += (tgtX - rotX) * 0.075;
+    globe.rotation.set(rotX, rotY, 0);
+    if (!reduce){
+      travellers.forEach(function(tr){
+        tr.t = (tr.t + d * 0.13) % 1;
+        tr.dot.position.copy(tr.curve.getPoint(tr.t));
+      });
+    }
+    rend.render(scene, cam);
+  })();
+}
+})();
+</script>
+</body>
+</html>
